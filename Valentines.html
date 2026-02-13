@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Long Stem Blooming Roses 🌹</title>
+
+<style>
+body {
+  background: linear-gradient(#ffb6c1, #ff4d6d);
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+/* Letter */
+.letter {
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+/* Container */
+.roses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Rose */
+.rose {
+  position: relative;
+  width: 100px;
+  height: 200px; /* taller space */
+  margin: 15px;
+}
+
+/* LONG STEM 🌿 */
+.stem {
+  position: absolute;
+  width: 6px;
+  height: 130px;   /* ← LONGER STEM */
+  background: green;
+  left: 47px;
+  top: 60px;
+  border-radius: 3px;
+}
+
+/* Center */
+.center {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: darkred;
+  border-radius: 50%;
+  left: 40px;
+  top: 35px;
+  z-index: 2;
+}
+
+/* Petal */
+.petal {
+  position: absolute;
+  width: 35px;
+  height: 45px;
+  background: red;
+  border-radius: 50%;
+  top: 20px;
+  left: 32px;
+  transform-origin: bottom center;
+  animation: bloom 3s ease forwards infinite;
+}
+
+/* 5 petals */
+.p1 { --r: 0deg; }
+.p2 { --r: 72deg; }
+.p3 { --r: 144deg; }
+.p4 { --r: 216deg; }
+.p5 { --r: 288deg; }
+
+@keyframes bloom {
+  0% { transform: rotate(var(--r)) scale(0); }
+  60% { transform: rotate(var(--r)) scale(1.3); }
+  100% { transform: rotate(var(--r)) scale(1); }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="letter">
+  <h2>From: Allen 💌</h2>
+  <p>Dear Lyn,</p>
+  <p>
+  Thank you lyn kasi nakilala kita and Thank you sa pag buhat mo lagi sakin sa RG,
+  yun lang wala nako masabi. Thank you always ❤️
+  </p>
+</div>
+
+<div class="roses">
+
+  <!-- Rose -->
+  <div class="rose">
+    <div class="petal p1"></div>
+    <div class="petal p2"></div>
+    <div class="petal p3"></div>
+    <div class="petal p4"></div>
+    <div class="petal p5"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+  <!-- Copy more for 12 roses -->
+  <div class="rose">
+    <div class="petal p1"></div>
+    <div class="petal p2"></div>
+    <div class="petal p3"></div>
+    <div class="petal p4"></div>
+    <div class="petal p5"></div>
+    <div class="center"></div>
+    <div class="stem"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
